@@ -1,0 +1,96 @@
+/* Perbaiki posisi ke tengah */
+body {
+    background-color: #ffebf0; /* Warna pink soft */
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center; /* Semua elemen teks di tengah */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Agar konten ada di tengah layar */
+  }
+  
+  /* Container utama untuk daftar produk */
+.product-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Biar isinya ada di tengah */
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Kotak daftar produk */
+  .product-list {
+    width: 80%; /* Bisa disesuaikan */
+    max-width: 600px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }  
+  
+  /* Judul utama */
+  h1 {
+    font-style: italic;
+    color: #ff4081; /* Warna pink tua */
+  }
+  
+  /* Form input */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    align-items: center;
+  }
+  
+  input {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f3e1e5;
+  }
+  
+  /* Tombol */
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button[type="submit"] {
+    background-color: #ff4081;
+    color: white;
+  }
+  
+  button.edit {
+    background-color: #ffb74d; /* Warna kuning */
+    color: white;
+  }
+  
+  button.delete {
+    background-color: #e53935; /* Warna merah */
+    color: white;
+  }
+  
+  /* Daftar Produk */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }  
