@@ -3,10 +3,15 @@ const express = require('express');
 const cors = require('cors');
 const pool = require('./db');
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json());
+
+// Endpoint root
+app.get('/', (req, res) => {
+    res.send('Hello Express.js');
+});
 
 // Endpoint untuk menambahkan produk (CREATE)
 app.post('/produk', async (req, res) => {
@@ -61,5 +66,5 @@ app.delete('/produk/:id', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Server berjalan di http://localhost:${PORT}`);
-}); 
+    console.log(`🚀 Server berjalan di http://localhost:${PORT}`);
+});
