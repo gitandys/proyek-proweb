@@ -109,6 +109,7 @@ DELETE /api/products/:id   → Hapus produk
 ![Read](image-4.png)
 ### Update (Memperbarui Produk)
 ![Read](<Screenshot 2025-03-27 085858.png>)
+
 ![After Read](<Screenshot 2025-03-27 085906.png>)
 ### Delete (Menghapus Produk)
 ![Delete](image-7.png)
