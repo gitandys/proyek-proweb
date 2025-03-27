@@ -1,14 +1,22 @@
-# Aplikasi E-Commerce Sederhana
-Aplikasi berbasis web untuk manajemen produk menggunakan React + Vite
+# Aplikasi E-Commerce CRUD Sederhana
 
-## 1. Persyaratan Sistem
-- Node.js & npm harus terinstall
-- Vite & React harus terinstall
-- Database (misalnya PostgreSQL jika ada backend)
+Aplikasi berbasis web untuk manajemen produk menggunakan React dan Vite.
+
+## 1. Persyaratan sistem :
+
+Sebelum memulai pengembangan aplikasi dengan React dan Vite, pastikan Node.js dan npm sudah terinstal. Selanjutnya, instal Vite dan React menggunakan npm. Selain itu, siapkan juga PostgreSQL sebagai database yang akan digunakan pada aplikasi ini.
+
+- Node.js
+- npm
+- Vite
+- React
+- PostgreSQL (database)
 
 ## 2. Struktur Database
-Berikut adalah struktur tabel utama dalam database :
-### **Tabel Produk (`products`)**
+
+Berikut adalah struktur tabel utama dalam database:
+
+### **Tabel Produk (products)**
 
 | Kolom    | Tipe Data | Deskripsi               |
 |----------|----------|-------------------------|
@@ -16,7 +24,8 @@ Berikut adalah struktur tabel utama dalam database :
 | nama     | VARCHAR  | Nama produk             |
 | harga    | DECIMAL  | Harga produk            |
 
-Untuk membuat tabel di MySQL, gunakan perintah berikut :
+Untuk membuat tabel di PostgreSQL, gunakan perintah berikut:
+
 ```sql
 sql
 CREATE TABLE IF NOT EXISTS produk (
@@ -26,27 +35,34 @@ CREATE TABLE IF NOT EXISTS produk (
 );
 ```
 
-## 3. Cara Install Dependensi
-Jalankan perintah berikut di terminal backend dan forntend :
+## 3. Cara install dependensi
+
+jalankan perintah berikut di terminal :
+
 ```bash
 npm install
 ```
 
-## 4. Cara Menjalankan Aplikasi
+## 4. Cara menjalankan aplikasi
+
 ### Backend
+
 Jalankan backend dengan perintah :
+
 ```bash
 node index.js
 ```
-Pastikan file konfigurasi (misalnya .env) sudah disiapkan.
 
 ### Frontend
+
 Jalankan frontend dengan perintah :
+
 ```bash
 npm run dev
 ```
 
-## 5. Daftar Endpoint API
+## 5. Daftar API Endpoint
+
 Jika ada backend, tambahkan daftar endpoint untuk CRUD produk :
 ```bash
 GET    /api/products       → Ambil semua produk  
@@ -56,6 +72,7 @@ DELETE /api/products/:id   → Hapus produk
 ```
 
 ## 6. Penggunaan aplikasi
+
 - Buka di browser dengan alamat http://localhost:3001
 - Pastikan backend sudah berjalan dan database sudah terhubung dengan baik. 
 - Setelah itu, buka aplikasi di browser dengan alamat http://localhost:5173 
@@ -63,18 +80,21 @@ DELETE /api/products/:id   → Hapus produk
 - Anda dapat mengakses aplikasi melalui browser dan melakukan operasi CRUD pada produk.
 
 ## 7. Teknologi yang Digunakan
-- Frontend: React.js, Bootstrap
-- Backend: Node.js, Express.js
-- Database: PostgreSQL
+
+- **Frontend**: React.js, Bootstrap
+- **Backend**: Node.js, Express.js
+- **Database**: PostgreSQL
 
 ## 8. Fitur Tambahan
+
 - Styling menggunakan Bootstrap dan CSS
 - Notifikasi sukses/gagal pada aksi CRUD
 
 ## 9. Troubleshooting Tips
-- Jika ada bug, gunakan `console.log()` di lokasi yang relevan untuk membantu debugging.
-- Jika styling tidak muncul, pastikan Bootstrap diimpor dengan benar.
-- Jika versi library tidak cocok, periksa `package.json` dan sesuaikan dengan dokumentasi resmi.
+
+- Jika ada bug, gunakan console.log() di lokasi yang relevan untuk membantu debugging.
+- Jika styling tidak muncul, pastikan Bootstrap atau Tailwind diimpor dengan benar.
+- Jika versi library tidak cocok, periksa package.json dan sesuaikan dengan dokumentasi resmi.
 
 ## 10. Dokumentasi Lengkap
 ### Halaman Utama
