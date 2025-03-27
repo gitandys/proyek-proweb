@@ -92,9 +92,9 @@ DELETE /api/products/:id   → Hapus produk
 
 ## 9. Troubleshooting Tips
 
-- Jika ada bug, gunakan console.log() di lokasi yang relevan untuk membantu debugging.
-- Jika styling tidak muncul, pastikan Bootstrap atau Tailwind diimpor dengan benar.
-- Jika versi library tidak cocok, periksa package.json dan sesuaikan dengan dokumentasi resmi.
+- Jika ada bug, gunakan `console.log()` di lokasi yang relevan untuk membantu debugging.
+- Jika styling tidak muncul, pastikan Bootstrap diimpor dengan benar.
+- Jika versi library tidak cocok, periksa `package.json` dan sesuaikan dengan dokumentasi resmi.
 
 ## 10. Dokumentasi Lengkap
 ### Halaman Utama
